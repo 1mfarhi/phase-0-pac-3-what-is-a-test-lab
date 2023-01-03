@@ -1,5 +1,17 @@
-const name = "Joe";
-const height = 74;
+const name = "Susan";
+const height = 39;
 const message = `${name} is ${height} inches tall`;
 
 module.exports = {name, height, message};
+
+function introduction(name) {
+    return `Hi, my name is ${name}.`
+    }
+ 
+function introductionWithLanguage(name, language) {
+    return `Hi, my name is ${name} and I am learning to program in ${language}.`
+}
+ 
+function introductionWithLanguageOptional(name, language = "JavaScript") {
+    return `Hi, my name is ${name} and I am learning to program in ${language}.`
+}
